@@ -3,11 +3,19 @@
 @import url('../styles/text.css');
 @import url('../styles/components/button.css');
 
+
+#mocha {
+  margin: 0 30px 25px 30px;
+}
+
 ul#mocha-stats {
+  position: static;
+  margin: auto;
   background-color: var(--secondary-color);
-  padding: 5px 10px;
+  padding: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: row-reverse;
   border-radius: 4px;
 }
@@ -16,13 +24,24 @@ ul#mocha-stats {
   padding: 0;
 }
 
-#mocha-stats .progress {
-  display: flex;
-  align-items: center;
+#mocha-stats li em {
+  font-style: normal;
 }
 
-#mocha {
-  margin: 0 30px 25px 30px;
+#mocha-stats .duration em {
+  color: purple;
+}
+
+#mocha-stats .progress {
+  display: flex;
+}
+
+#mocha-stats .failures em {
+  color: red;
+}
+
+#mocha-stats .passes em {
+  color: green;
 }
 
 body {

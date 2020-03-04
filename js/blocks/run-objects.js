@@ -30,7 +30,7 @@ function execObjectSymbols() {
   const user = {
     name: "Alessio Sferro",
     [symbol]: 2,
-    [globalSymbol]: "Global Symbol Value"
+    [globalSymbol]: "test"
   }
 
   console.log(user);
