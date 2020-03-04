@@ -1,4 +1,6 @@
-export * from './interaction.js';
-export * from './or-tricks.js';
-export * from './and-tricks.js';
-export * from './loop-labels.js';
+/* eslint-disable import/extensions */
+
+export * from './run-user-interactions.js';
+export * from './run-or-tricks.js';
+export * from './run-and-tricks.js';
+export * from './run-loop-labels.js';

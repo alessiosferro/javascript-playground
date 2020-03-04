@@ -1,10 +1,12 @@
+/* eslint-disable */
+
 // break e continue possono far saltare l'esecuzione
 // del codice alle etichette associate ai loop.
 // I salti devono essere effettuati in zone interne
 // al loop e le etichette devono trovarsi in scope
 // più esterni (quindi più in alto).
 
-export function execLoopLabels() {
+export function runLoopLabels() {
   let i;
 
   outerLoop: for (i = 0; i < 10; i++) {

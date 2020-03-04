@@ -1,8 +1,8 @@
-export const APP_DEFAULT_CONFIG = {
+export default {
   PLAYABLE_BLOCKS: {
-    execInteraction: false,
-    execOrTricks: false,
-    execAndTricks: false,
-    execLoopLabels: false
-  }
+    runUserInteractions: false,
+    runOrTricks: false,
+    runAndTricks: false,
+    runLoopLabels: false,
+  },
 };

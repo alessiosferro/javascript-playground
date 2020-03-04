@@ -1,0 +1,25 @@
+{
+  "name": "js-playground",
+  "version": "1.0.0",
+  "description": "Ambiente JavaScript creato per imparare le funzionalità del linguaggio. È possibile modificare la porzione di codice eseguito cambiando i settaggi all'interno del file `app.config.js`, nella cartella `js/config`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alessiosferro/javascript-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alessiosferro/javascript-playground/issues"
+  },
+  "homepage": "https://github.com/alessiosferro/javascript-playground#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  }
+}

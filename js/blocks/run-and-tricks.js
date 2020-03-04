@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 /**
  * L'and valuta gli operandi da sinistra a destra.
  * Ogni operando viene convertito in valore booleano.
@@ -11,8 +13,9 @@
  * la leggibilità del codice.
  */
 
-export function execAndTricks() {
+export function runAndTricks() {
   let x = 2;
+
   x == 2 && console.log(`x = ${x}`);
   x > 2 && console.log('Questa funzione non verrà invocata');
 

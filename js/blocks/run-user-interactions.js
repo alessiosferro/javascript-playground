@@ -1,4 +1,6 @@
-export function execInteraction() {
+/* eslint-disable */
+
+export function runUserInteractions() {
   // applicando l'operatore unario +, il valore restituito
   // da prompt verrà convertito a tipo number
   const personAge = +prompt('How old are you?', 18);
@@ -16,7 +18,7 @@ export function execInteraction() {
     alert(`You are ${personAge} years old!`);
   }
 
-  if (confirm('Are you sick?')) {
+  if (window.confirm('Are you sick?')) {
     alert('You are sick!');
   } else {
     alert('You are not sick!');

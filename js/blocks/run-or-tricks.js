@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // l'operatore OR può essere utilizzato negli assegnamenti
 // per fornire un valore di fallback, nel caso in cui
 // i valori precedenti non siano valori "veri", ovvero
@@ -7,8 +9,8 @@
 // può anche essere utilizzato per chiamare funzioni
 // o eseguire istruzioni
 
-export function execOrTricks() {
-  let loadedUser = null;
+export function runOrTricks() {
+  const loadedUser = null;
 
   // loadedUser è un valore falso, quindi passa avanti.
   // la stringa "Alessio Sferro" convertita a boolean

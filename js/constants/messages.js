@@ -1,3 +1,3 @@
-export const MESSAGES = {
-  DEFAULT: 'Hello World'
+export default {
+  DEFAULT: 'Hello World',
 };
