@@ -5,3 +5,16 @@
   flex-direction: column;
   height: 100%;
 }
+
+.container {
+  border-radius: 4px;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-primary {
+  background-color: var(--secondary-color);
+}

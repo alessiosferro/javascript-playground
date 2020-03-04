@@ -3,7 +3,28 @@
 @import url('../styles/text.css');
 @import url('../styles/components/button.css');
 
-em {
-  color: white !important;
-  margin: 0 5px 0 2px;
+ul#mocha-stats {
+  background-color: var(--secondary-color);
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  border-radius: 4px;
+}
+
+#mocha-stats li {
+  padding: 0;
+}
+
+#mocha-stats .progress {
+  display: flex;
+  align-items: center;
+}
+
+#mocha {
+  margin: 0 30px 25px 30px;
+}
+
+body {
+  color: var(--primary-color);
 }

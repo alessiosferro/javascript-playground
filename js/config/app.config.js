@@ -4,5 +4,6 @@ export default {
     runOrTricks: false,
     runAndTricks: false,
     runLoopLabels: false,
+    runObjects: true,
   },
 };

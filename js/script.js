@@ -8,6 +8,7 @@ import {
   runOrTricks,
   runAndTricks,
   runLoopLabels,
+  runObjects,
 } from './blocks/index.js';
 
 const { PLAYABLE_BLOCKS } = APP_DEFAULT_CONFIG;
@@ -20,6 +21,7 @@ const BLOCKS = {
   runOrTricks,
   runAndTricks,
   runLoopLabels,
+  runObjects,
 };
 
 // seleziona la porzione di codice da eseguire
