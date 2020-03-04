@@ -1,0 +1,10 @@
+a {
+  margin: 15px 0;
+  color: var(--secondary-color);
+  transition: color 200ms ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: var(--grey-color-2);
+}

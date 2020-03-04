@@ -1,0 +1,26 @@
+a.btn,
+.btn {
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 200ms ease-out;
+  text-decoration: none;
+}
+
+a.btn-primary,
+.btn-primary {
+  background-color: var(--grey-color-1);
+  color: var(--primary-color);
+}
+
+a.btn-primary:hover,
+.btn-primary:hover {
+  background-color: var(--grey-color-2);
+}
+
+a.btn-primary:focus,
+.btn-primary:focus {
+  outline: 0;
+}

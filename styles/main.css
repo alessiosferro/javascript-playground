@@ -1,0 +1,11 @@
+@import url('./base.css');
+@import url('./text.css');
+@import url('./components/button.css');
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}

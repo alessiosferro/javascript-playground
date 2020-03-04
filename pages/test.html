@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- add mocha css, to show results -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+  <link rel="stylesheet" href="test.css" />
+
+  <!-- add mocha framework code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+  <script>
+    mocha.setup('bdd'); // minimal setup
+  </script>
+  <!-- add chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script>
+    // chai has a lot of stuff, let's make assert global
+    let assert = chai.assert; </script>
+</head>
+
+<body>
+  <div class="center">
+    <h1>Testing section</h1>
+    <p>Press F12 or CMD + OPTION + J to open the console.</p>
+    <a class="btn btn-primary" href="../index.html">Go back to the main window</a>
+  </div>
+  <script src="../js/functions/pow.js"></script>
+  <!-- the script with tests (describe, it...) -->
+  <script src="../js/tests/pow.spec.js"></script>
+  <!-- the element with id="mocha" will contain test results -->
+  <div id="mocha"></div>
+  <!-- run tests! -->
+  <script>mocha.run();</script>
+</body>
+
+</html>
