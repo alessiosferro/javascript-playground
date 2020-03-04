@@ -1,4 +1,4 @@
-export default () => {
+export function execInteraction() {
   // applicando l'operatore unario +, il valore restituito
   // da prompt verrà convertito a tipo number
   const personAge = +prompt('How old are you?', 18);
@@ -21,4 +21,4 @@ export default () => {
   } else {
     alert('You are not sick!');
   }
-};
+}

@@ -1,17 +1,30 @@
+'use strict';
+
 import { APP_DEFAULT_CONFIG } from './config/app.config.js';
-import interaction from './functions/interaction.js';
 
-const BLOCKS = APP_DEFAULT_CONFIG.PLAYABLE_BLOCKS;
+import {
+  execInteraction,
+  execOrTricks,
+  execAndTricks,
+  execLoopLabels
+} from './blocks/index.js';
 
-// i nomi dei blocchi di codice devono coincidere con le chiavi
-// del seguente oggetto, per chiamare correttamente il blocc
-// di codice associato.
-const FUNCTIONS = {
-  interaction
+const { PLAYABLE_BLOCKS } = APP_DEFAULT_CONFIG;
+
+// le chiavi dell'oggetto PLAYABLE_BLOCKS
+// devono coincidere con le chiavi dell'oggetto BLOCKS
+// per chiamare correttamente il blocco di codice associato.
+const BLOCKS = {
+  execInteraction,
+  execOrTricks,
+  execAndTricks,
+  execLoopLabels
 };
 
 // seleziona la porzione di codice da eseguire
 // in base alla configurazione dell'app
-for (const blockName in BLOCKS) {
-  if (BLOCKS[blockName]) FUNCTIONS[blockName]();
+for (const blockName in PLAYABLE_BLOCKS) {
+  if (PLAYABLE_BLOCKS[blockName]) {
+    BLOCKS[blockName]();
+  }
 }
